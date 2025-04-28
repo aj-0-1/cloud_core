@@ -1,0 +1,2 @@
+[workspace]
+members = ["object_store", "function_runner", "event_bus"]
