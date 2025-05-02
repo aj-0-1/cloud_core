@@ -1,2 +1,3 @@
 [workspace]
 members = ["object_store", "function_runner", "event_bus"]
+resolver = "3"

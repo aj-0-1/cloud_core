@@ -2,13 +2,22 @@
 name = "object_store"
 version = "0.1.0"
 edition = "2024"
+resolver = "3"
 
 [dependencies]
-axum = "0.8.3"
-axum-streams = "0.21.0"
-thiserror = "2.0.12"
-tokio = {version = "1.44.2", features = ["full"]}
-futures = "0.3.31"
-bytes = "1.10.1"
-tokio-stream = "0.1.17"
-futures-util = "0.3.31"
+axum = "0.7"
+bytes = "1"
+futures = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sled = "0.34"
+thiserror = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+tokio-stream = "0.1"
+uuid = { version = "1.10", features = ["v4"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[dev-dependencies]
+tempfile = "3"
+tower = { version = "0.4", features = ["util"] }
